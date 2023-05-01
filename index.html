@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Profile with LocalStorage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@200&family=Roboto:wght@500&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="box-container">
+        <div class="left-box">
+          <h1>Məlumatları əlavə etmək</h1>
+          <div class="container-left">
+            <td>
+              <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                  <div>
+                      <label>Ad Soyad:</label><label class="validation-error hide" id="fullNameValidationError">Boş buraxıla bilməz.</label>
+                      <input type="text" name="fullName" id="fullName">
+                  </div>
+                  <div>
+                      <label>Şəhər</label>
+                      <input type="text" name="city" id="city">
+                  </div>
+                  <div>
+                      <label>E-mail</label>
+                      <input type="text" name="eMail" id="eMail">
+                  </div>
+                  <div>
+                      <label>Nömrə</label>
+                      <input type="text" name="number" id="number">
+                  </div>
+                  <div  class="form-action-buttons">
+                      <input type="submit" value="Göndər">
+                  </div>
+              </form>
+          </td>
+          </div>
+        </div>
+        <div class="right-box">
+          <h1>Düzəliş etmək və silmək</h1>
+              <div class="text-info"> 
+                <div id="info-zone">
+                  <td>
+                    <table class="list" id="employeeList">
+                        <thead>
+                            <tr>
+                                <th>Ad Soyad</th>
+                                <th>Şəhər</th>
+                                <th>E-mail</th>
+                                <th>Nömrə</th>
+                                <th>Tənzimlə</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+    
+                        </tbody>
+                    </table>
+                    </td>
+                </tr>
+              </div>
+              </div>
+          </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
